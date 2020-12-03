@@ -30,9 +30,20 @@ W = int(input("digite a capacidade de carregamento do.\n"))
 # val = [60, 100, 120] 
 # wt = [10, 20, 30] 
 # W = 50
+# listaitens = [['1',1,1],['2',2,2]]
+val = []
+wt = []
 
+#print(listaitens)
+for i in range(len(listaitens)):
+    val.append(listaitens[i][1])
+    wt.append(listaitens[i][2])
+
+n = len(val)
+# print(n)
+# print(val)
+# print(wt)
 itens = knapSack(W, wt, val, n)
-print(listaitens)
 # itensLevados = []
 # estahNoCaminhao = False
 # for linha in range(len(val), 0, -1):
