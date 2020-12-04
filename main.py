@@ -1,21 +1,8 @@
-itens = []
-listaitens = []
-def knapSack(W, wt, val, n): 
-    K = [[0 for x in range(W + 1)] for x in range(n + 1)] 
+import knapSack
 
-    for i in range(n + 1): 
-        for w in range(W + 1): 
-            if i == 0 or w == 0: 
-                K[i][w] = 0
-            elif wt[i-1] <= w: 
-                K[i][w] = max(val[i-1] 
-                          + K[i-1][w-wt[i-1]],   
-                              K[i-1][w]) 
-            else: 
-                K[i][w] = K[i-1][w] 
-    
-    print(K[n][W])
-    return K
+listaitens = []
+itenscarregados = []
+
 
 while(1):
     nomeproduto = str(input("digite o nome do produto.\n"))
@@ -26,24 +13,14 @@ while(1):
 
     listaitens.append([nomeproduto,valorproduto,pesoproduto])
 
+# listaitens = [['1',60,10],['2',100,20],['3',120,30]]
 W = int(input("digite a capacidade de carregamento do.\n"))
-# val = [60, 100, 120] 
-# wt = [10, 20, 30] 
-# W = 50
-# listaitens = [['1',1,1],['2',2,2]]
-val = []
-wt = []
 
-#print(listaitens)
-for i in range(len(listaitens)):
-    val.append(listaitens[i][1])
-    wt.append(listaitens[i][2])
+n = len(listaitens)
 
-n = len(val)
-# print(n)
-# print(val)
-# print(wt)
-itens = knapSack(W, wt, val, n)
+maximo = knapSack.main(W,listaitens, n)
+print(maximo)
+
 # itensLevados = []
 # estahNoCaminhao = False
 # for linha in range(len(val), 0, -1):
