@@ -14,6 +14,16 @@ O projeto é um programa que calcula a melhor forma para carregar produtos consi
 
 ## Screenshots
 
+![Opção 1](./assets/opcao1.png)
+
+![Opção 1.1](./assets/opcao1.1.png)
+
+![Opção 2](./assets/opcao2.png)
+
+![Opção 3](./assets/opcao3.png)
+
+
+
 ## Instalação 
 **Linguagem**: Python
 
