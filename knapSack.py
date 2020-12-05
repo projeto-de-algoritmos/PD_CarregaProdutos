@@ -22,5 +22,5 @@ def main(W, listaitens, n):
                 K[i][w] = K[i-1][w] 
     
 
-    print('quantida em centimetros quadrados que é possivel carregar: '+str(K[n][W])+'.\n')
+    print('quantida em centimetros cubicos que é possivel carregar: '+str(K[n][W])+'.\n')
     return K
