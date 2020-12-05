@@ -41,7 +41,7 @@ if __name__ == '__main__':
             print("Opcao 2 foi escolhida")
         elif choice=='3':
             print("Opcao 3 foi escolhida")
-            W = int(input("digite a capacidade em centimetros cubicos de carregamento do.\n"))
+            W = int(input("digite a capacidade em centimetros cubicos de carregamento do carregador.\n"))
             n = len(listaitens)
             maximo = knapSack.main(W,listaitens, n)
             print(maximo)    
