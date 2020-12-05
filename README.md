@@ -10,7 +10,7 @@
 | 15/0136862  |  Lucas Alexandre Fernandes Martins |
 
 ## Sobre 
-O projeto é um programa que calcula a melhor forma para carregar produtos considerando seu tamanho, seu peso e o valor maximo que a pessoa consegue carregar.
+O projeto é um programa que calcula a melhor forma para carregar produtos considerando seu tamanho, seu peso e o valor maximo que o carrinho consegue carregar.
 
 ## Screenshots
 

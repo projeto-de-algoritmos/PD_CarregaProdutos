@@ -1,4 +1,6 @@
-def main(W, listaitens, n): 
+def main(W, listaitens, n):
+
+
     K = [[0 for x in range(W + 1)] for x in range(n + 1)] 
 
     for i in range(n + 1): 
@@ -19,6 +21,6 @@ def main(W, listaitens, n):
             else: 
                 K[i][w] = K[i-1][w] 
     
-    #print(K[n][W])
-    # print(itenscarregados)
-    return K[n][W]
+
+    print('quantida em centimetros quadrados que é possivel carregar: '+str(K[n][W])+'.\n')
+    return K

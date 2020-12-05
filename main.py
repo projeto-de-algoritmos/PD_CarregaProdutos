@@ -1,20 +1,9 @@
 import knapSack
+import carrinho
 
 listaitens = []
 itenscarregados = []
 # listaitens = [['1',60,10],['2',100,20],['3',120,30]]
-# itensLevados = []
-# estahNoCaminhao = False
-# for linha in range(len(val), 0, -1):
-#         if(itens[linha][W] != itens[linha-1][W]):
-#             estahNoCaminhao = True
-        
-#         if estahNoCaminhao:
-#             wt = val[linha-1]
-#             itensLevados.append(val[linha-1])
-#             W -= wt
-
-##print(itensLevados)
 
 def print_menu():
     print(30 * "-" , "MENU" , 30 * "-")
@@ -37,14 +26,16 @@ if __name__ == '__main__':
             valorproduto = int(input("digite o tamanho em centimetros cubicos do produto.\n"))
             pesoproduto = int(input("digite o peso em quilograma do produto.\n"))
             listaitens.append([nomeproduto,valorproduto,pesoproduto])
+            #listaitens = [['1',60,10],['2',100,20],['3',120,30]]
         elif choice=='2':
             print("Opcao 2 foi escolhida")
         elif choice=='3':
             print("Opcao 3 foi escolhida")
-            W = int(input("digite a capacidade em centimetros cubicos de carregamento do carregador.\n"))
+            W = int(input("digite a capacidade em centimetros cubicos de carregamento do carrinho.\n"))
             n = len(listaitens)
-            maximo = knapSack.main(W,listaitens, n)
-            print(maximo)    
+            K = knapSack.main(W,listaitens, n) 
+            itens = carrinho.main(K,n,listaitens, W)
+            print(itens)   
         elif choice=='4':
             print("Opcao 4 foi escolhida")
             print('Saindo....')
