@@ -21,7 +21,7 @@ O projeto é um programa que calcula a melhor forma para carregar produtos consi
 
 #### Pelo terminal
 - Para clonar o repositório:
-> $ git clone https://github.com/projeto-de-algoritmos/
+> $ git clone https://github.com/projeto-de-algoritmos/PD_CarregaProdutos
 
 ## Uso 
 Execute o programa com o comando 
